@@ -28,12 +28,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Personal - v4.9.1
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+ <!-- inclure le fichier JavaScript pour l'envoi de formulaire -->
+
+ <script src="assets/vendor/php-email-form/validate.js"></script>
 </head>
 
 <body>
@@ -504,7 +501,10 @@
 
       <div class="section-title">
         <h2>CV</h2>
-        <p>Vérifier mon CV</p><a href="#"><button class="btn"> Télécharger CV <i class="fas fa-download"></i> </button></a>
+        <p>Vérifier mon CV</p>
+        <a download="" href="assets/pdf/CV_Youssouf Djire.pdf">
+          <button class="btn"> Télécharger CV <i class="fas fa-download"></i> </button>
+        </a>
       </div>
 
       <div class="row">
@@ -549,9 +549,24 @@
         </div>
         <div class="col-lg-6">
           <h3 class="resume-title">Expérience professionnelle</h3>
+          
+          <div class="resume-item">
+            <h4>Stagiaire à Moov Africa Malitel</h4>
+            <h5><i class="uil uil-calendar-alt"></i>02/29/2023-02/29/2023</h5>
+            <p><em> Moov Africa Malitel </em></p>
+            <p>
+            <ul>
+              <li> Gestion du réseau et des clients CDMA, comprenant la liste, l'activation, la suppression, le bouchage, le débouchage, la modification et le changement des lignes d'abonnés.</li>
+              <!-- <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+              <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+              <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li> -->
+            </ul>
+            </p>
+          </div>
+
           <div class="resume-item">
             <h4>Développeur web full stack</h4>
-            <h5><i class="uil uil-calendar-alt"></i>01/06/2022-03/2023</h5>
+            <h5><i class="uil uil-calendar-alt"></i>01/06/2022-01/03/2023</h5>
             <p><em>Orange Digital Center - Mali </em></p>
             <p>
             <ul>
@@ -793,8 +808,8 @@
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/apiregion.jpeg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
+              <h4>Application</h4>
+              <p>API</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/apiregion.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -807,8 +822,8 @@
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/siteodc.jpeg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
+              <h4>Site Web</h4>
+              <p>Site Vitrine</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/siteodc.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -821,8 +836,8 @@
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/apitirage.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
+              <h4>Application</h4>
+              <p>API</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/apitirage.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -835,8 +850,8 @@
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/angular.jpeg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
+              <h4>Portfolio</h4>
+              <p>Portfolio</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/angular.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -849,8 +864,8 @@
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/springbootsecurity.jpeg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
+              <h4>Application</h4>
+              <p>Sécurité</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/springbootsecurity.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -863,8 +878,8 @@
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/erp.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
+              <h4>Application</h4>
+              <p>E.R.P</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/erp.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -877,8 +892,8 @@
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/flutter.jpeg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
+              <h4>Application</h4>
+              <p>Tiktok Clone</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/flutter.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -891,8 +906,8 @@
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/siteart.jpeg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
+              <h4>Site web</h4>
+              <p>E-commerce</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/siteart.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -905,8 +920,8 @@
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/siteenviro.jpeg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
+              <h4>Site Web</h4>
+              <p>Environnement</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/siteenviro.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -972,7 +987,7 @@
         </div>
       </div>
 
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+      <form action="https://formsubmit.co/djireyoussouf1999@gmail.com" method="post" role="form" class="php-email-form mt-4">
         <div class="row">
           <div class="col-md-6 form-group">
             <input type="text" name="name" class="form-control" id="name" placeholder="votre nom" required>
@@ -995,6 +1010,7 @@
         <div class="text-center"><button type="submit">Envoyer le message</button></div>
       </form>
 
+      
     </div>
   </section><!-- End Contact Section -->
 
