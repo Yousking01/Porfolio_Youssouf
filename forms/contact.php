@@ -1,41 +1,21 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+if(isset($_POST['submit'])){
+    // Get the data entered in the form
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'djireyoussouf1999@gmail.com.com';
+    // Build the message to send
+    $to = "djireyoussouf1999@gmail.com";
+    $subject = "New contact message";
+    $headers = "From: ".$name." <".$email.">\r\n"."Reply-To: ".$email."\r\n"."X-Mailer: PHP/".phpversion();
+    $body = "Name: ".$name."\r\n"."Email: ".$email."\r\n"."Message: ".$message;
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
-
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
-
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
-
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
+    // Send the message
+    if(mail($to, $subject, $body, $headers)){
+        echo "<p>Your message has been sent.</p>";
+    }else{
+        echo "<p>An error occurred while sending the message. Please try again later.</p>";
+    }
+}
 ?>
