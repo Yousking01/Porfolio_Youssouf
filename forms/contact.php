@@ -7,9 +7,9 @@
         Subject : " . $_POST["subject"] . "
         Message : " . $_POST["message"];
 
-        $retour = mail("djireyoussouf1999@gmail.com", $_POST["name"],
-        $message, "Reply-to:" . $_POST["email"], $_POST["subject"]);
-        if($retour) {
+        $retour = mail("djireyoussouf1999@gmail.com", $_POST["subject"],
+        $message, "Reply-to:" . $_POST["email"]);
+        if ($retour) {
           echo "<p>L'email a bien été envoyé.</p>";
         }
       }
