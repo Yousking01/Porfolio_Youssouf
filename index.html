@@ -1,1039 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Youssouf Djire</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/logos.png" rel="icon">
-  <link href="assets/img/logos.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- CSS Files -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Youssouf Djire, Data Engineer</title>
+  <meta name="description" content="Portfolio of Youssouf Djire, data engineer: data pipelines with Python, Apache Kafka and Spark Structured Streaming. Master&#x27;s degree with honours from Tomsk Polytechnic University.">
+  <meta name="author" content="Youssouf Djire">
+  <meta name="theme-color" content="#ffffff">
+  <script>/* set the theme before the first paint: saved choice, else the system preference */
+  (function(){var t;try{t=localStorage.getItem("yd-theme")}catch(e){}if(t!=="dark"&&t!=="light")t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t);document.documentElement.className+=" js-anim";setTimeout(function(){if(!window.__ydReady)document.documentElement.classList.remove("js-anim")},3000)})();</script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Youssouf Djire, Data Engineer">
+  <meta property="og:description" content="Portfolio of Youssouf Djire, data engineer: data pipelines with Python, Apache Kafka and Spark Structured Streaming. Master&#x27;s degree with honours from Tomsk Polytechnic University.">
+  <meta property="og:image" content="assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Onest:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
- <!-- inclure le fichier JavaScript pour l'envoi de formulaire -->
-
- <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Youssouf Djire", "alternateName": ["Youssouf Djiré", "Юссуф Джире"], "jobTitle": "Data Engineer", "email": "mailto:djireyoussouf1999@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Tomsk", "addressCountry": "RU"}, "alumniOf": "Tomsk Polytechnic University", "knowsLanguage": ["fr", "en", "ru"], "sameAs": ["https://github.com/Yousking01", "https://www.linkedin.com/in/youssouf-djir%C3%A9-544302247"]}</script>
 </head>
-
 <body>
+<div class="progress-line" id="progress" aria-hidden="true"></div>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
+<header class="site-header" id="top">
+  <nav class="navbar navbar-expand-xl" data-i18n-attr="aria-label:aria.main" aria-label="Main navigation">
     <div class="container">
-
-      <h1><a href="index.html">Youssouf Djire</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>Je suis <span></span></h2>
-      <!-- Développement d'applications web et mobiles -->
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#resume">Resume</a></li>
-          <li><a class="nav-link" href="#services">Services</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="social-links">
-        <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
-        <a href="https://www.facebook.com/profile.php?id=100006171434956" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://github.com/Yousking01" class="instagram"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/feed/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a class="brand" href="#top"><img src="assets/img/logo.svg" alt="" width="40" height="40"><span data-i18n="hero.name">Youssouf Djire</span></a>
+      <div class="nav-tools order-xl-3">
+        <div class="lang" role="group" data-i18n-attr="aria-label:nav.lang" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+          <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+        </div>
+        <button class="theme-btn" id="themeBtn" type="button" aria-pressed="false" data-i18n-attr="aria-label:theme.toggle;title:theme.toggle" aria-label="Switch between light and dark mode"><i class="bi bi-moon-stars" aria-hidden="true"></i><i class="bi bi-sun" aria-hidden="true"></i></button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" data-i18n-attr="aria-label:nav.menu" aria-label="Open menu"><i class="bi bi-list" aria-hidden="true"></i></button>
       </div>
-
+      <div class="collapse navbar-collapse order-xl-2" id="menu">
+        <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li><li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav.skills">Skills</a></li><li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav.experience">Experience</a></li><li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav.projects">Projects</a></li><li class="nav-item"><a class="nav-link" href="#education" data-i18n="nav.education">Education</a></li><li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li></ul>
+        <div class="nav-cv"><div class="dropdown cv-dd">
+  <button class="btn btn-cv dropdown-toggle" type="button" id="cvNav" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download" aria-hidden="true"></i> <span data-i18n="cv.download">Download CV</span></button>
+  <ul class="dropdown-menu" aria-labelledby="cvNav">
+    <li><h6 class="dropdown-header" data-i18n="cv.choose">Choose the language of the PDF</h6></li>
+    <li><a class="dropdown-item" href="assets/pdf/CV_Youssouf_Djire_EN.pdf" download data-i18n="cv.en">English (PDF)</a></li>
+    <li><a class="dropdown-item" href="assets/pdf/CV_Youssouf_Djire_FR.pdf" download data-i18n="cv.fr">French (PDF)</a></li>
+    <li><a class="dropdown-item" href="assets/pdf/CV_Youssouf_Djire_RU.pdf" download data-i18n="cv.ru">Russian (PDF)</a></li>
+  </ul>
+</div></div>
+      </div>
     </div>
-  </header><!-- End Header -->
+  </nav>
+</header>
 
-  <!-- animation d'ecriture -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    var typingEffect = new Typed("span",{
-      strings : ["Développeur Full Stack", "Back-end", "Front-end", "UI/UX Disigner"],
-      loop : true,
-      typeSpeed : 100,
-      backSpeed : 80,
-      backDelay : 1500
-    });
-  </script>
-
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>À Propos</h2>
-        <p>En savoir plus sur moi</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/me.png" class="img-fluid" alt="">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Développeur Full Stack</h3>
-          <p class="fst-italic">
-            Développeur Web, avec une solide connaissance des technologies de développement les plus récentes,ainsi que la capacité de créer des applications web robustes et innovantes. 
-            J'ai travaillé pendant des années dans les technologies Web et Conception Ui / Ux, ce qui m'a permis de délivrer un travail de qualité.
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Date de Naissance</strong> <span>1 Decembre 1999</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>djireyoussouf1999@gmail.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Téléphone:</strong> <span>+223 72095772</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Adresse:</strong> <span>Kalabancoro Nérécoro,<br> Rue: 350; Porte: 32.</span></li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>23</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Niveau d'étude:</strong> <span>License Pro</span></li>
-                <!-- <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>email@example.com</span></li> -->
-                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
-              </ul>
-            </div>
-          </div>
-          <p>
-            Je suis un jeune diplômé malien ambitieux et polyvalent, détenteur d'un Baccalauréat en série terminale  sciences exactes avec une mention assez-bien. J'ai également
-            obtenu une Licence Professionnelle en Réseau Informatique et Télécommunications avec la même mention, à l'École Supérieure de Gestion d'Informatique et de Comptabilité.
-            En outre, j'ai développé mes compétences en développement Web Full-Stack grâce à ma formation à Orange Digital Kalanso (1érè école numérique d’Orange au Mali).
-            Je possède également un permis de conduire et j'ai un niveau intermédiaire en anglais, ce qui me permet de communiquer avec aisance dans cette langue.
-            En somme, je suis un candidat dynamique et motivé, doté de solides compétences techniques et linguistiques, prêt à relever tous les défis que pourrait m'offrir le monde professionnel.
-          </p>
-        </div>
-      </div>
-
-    </div>
-    <!-- End About Me -->
-
-    <!-- ======= Counts ======= -->
-    <div class="counts container">
-
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6">
-          <div class="count-box">
-            <i class="bi bi-emoji-smile"></i>
-            <!-- calcule du porcentage -->
-            <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter">%</span>
-            <p>Clients Heureux</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-          <div class="count-box">
-            <i class="bi bi-journal-richtext"></i>
-             <!-- calcule du porcentage -->
-            <span data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projects</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="bi bi-headset"></i>
-             <!-- calcule du porcentage -->
-            <span data-purecounter-start="0" data-purecounter-end="5832" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Heures d'assistance</p>
-          </div>
-        </div>
-
-        <!-- <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="bi bi-award"></i>
-             
-            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Awards</p>
-          </div>
-        </div> -->
-
-      </div>
-
-    </div><!-- End Counts -->
-
-    <!-- ======= Skills  ======= -->
-    <div class="skills container">
-
-      <div class="section-title">
-        <h2>Compétences</h2>
-      </div>
-
-      <div class="row skills-content">
-
-        <div class="col-lg-3">
-
-          <div class="progress">
-            <span class="skill">HTML <i class="val">95%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">CSS <i class="val">95%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">JavaScript <i class="val">65%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">PHP <i class="val">60%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-3">
-
-          
-
-          <div class="progress">
-            <span class="skill">WordPress/CMS <i class="val">95%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Photoshop <i class="val">55%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">Figma <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">Flutter <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-3">
-
-          <div class="progress">
-            <span class="skill">Angular <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Flutter <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Ionic <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">Bootstrap <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-3">
-
-          <div class="progress">
-            <span class="skill">Java <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Spring Boot <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Node js <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">FireBase <i class="val">95%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">My SQL <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div><!-- End Compétences -->
-
-    <!-- ======= Intérêts ======= -->
-    <!-- <div class="interests container">
-
-      <div class="section-title">
-        <h2>Intérêts</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-store-line" style="color: #ffbb2c;"></i>
-            <h3>Lorem Ipsum</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3>Dolor Sitema</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-            <h3>Sed perspiciatis</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-            <h3>Magni Dolores</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #47aeff;"></i>
-            <h3>Nemo Enim</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-            <h3>Eiusmod Tempor</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-            <h3>Midela Teren</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-            <h3>Pira Neve</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-anchor-line" style="color: #b2904f;"></i>
-            <h3>Dirada Pack</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-disc-line" style="color: #b20969;"></i>
-            <h3>Moton Ideal</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-base-station-line" style="color: #ff5828;"></i>
-            <h3>Verdo Park</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-            <h3>Flavor Nivelanda</h3>
-          </div>
-        </div>
-      </div>
-
-    </div>End Interests -->
-
-    <!-- ======= Témoignages ======= -->
-    <div class="testimonials container">
-
-      <div class="section-title">
-        <h2>Témoignages</h2>
-      </div>
-
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-               Etudiants sérieux, rigoureux et passionné par le Développement, il m'a vraiment impressionnés par ces explois dans les differents projets qu'il a eux a fiare pour moi. 
-              Je vous le recommende car c'est le meilleur.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/kalouga.jpg" class="testimonial-img" alt="">
-              <h3>Fatoumata Kalouga</h3>
-              <h4>Développeuse</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Etudiants sérieux, determiner et passionné par le Développement, il m'a vraiment impressionnés par ces explois dans les differents projets qu'il a eux a fiare pour moi. 
-               Il a une bonne impression, il réalise mon projet avec tous les qualité possible et attention et support 24 heures sur 24. C'est vraimentun model pour tous. 
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/nene.jpg" class="testimonial-img" alt="">
-              <h3>Nene Sylla</h3>
-              <h4>Développeuse</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Etant le Gérant du centre de formation en Numérique ( Orange Digital Center - Mali ), j'ai vraiment été impressionnés par cet étudiants courageux, sérieux avec un seul objectif qui est d'atteindre son but. cet apprenant dans le centre m'a vraiment tiqués par ces differents projets qu'il nous a présentés. Je vous récommende vraiment cet intelligent Monsieur.   
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/kaou.jpg" class="testimonial-img" alt="">
-              <h3>Kaou Diallo</h3>
-              <h4>Gérant d' Orange DIgital Center - Mali</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <!-- <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-            </div>
-          </div> -->
-          <!-- End testimonial item -->
-
-          <!-- <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
-            </div>
-          </div> -->
-          <!-- End testimonial item -->
-
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <div class="owl-carousel testimonials-carousel">
-
-      </div>
-
-    </div><!-- End Testimonials  -->
-
-  </section><!-- End About Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
+<main id="main">
+  <section class="hero">
     <div class="container">
-
-      <div class="section-title">
-        <h2>CV</h2>
-        <p>Vérifier mon CV</p>
-        <a download="" href="assets/pdf/CV_Youssouf Djire.pdf">
-          <button class="btn"> Télécharger CV <i class="fas fa-download"></i> </button>
-        </a>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <h3 class="resume-title">Sommaire</h3>
-          <!-- <div class="resume-item pb-0">
-            <h4>Youssouf Djire</h4>
-            <p><em>Développeur Web, avec une connaissance approfondie et des années d'expérience, travaillant dans les technologies Web et Conception Ui / Ux, délivrant un travail de qualité.</em></p>
-            <p>
-            <ul>
-              <li>Portland par 127,Orlando, FL</li>
-              <li>(123) 456-7891</li>
-              <li>alice.barkley@example.com</li>
-            </ul>
-            </p>
-          </div> -->
-
-          <h3 class="resume-title">Mes études</h3>
-
-          <div class="resume-item">
-            <h4>License Pro en Réseaux Informatiques et Telecommunications</h4>
-            <h5><i class="uil uil-calendar-alt"></i>2018 - 2021</h5>
-            <p><em>E.S.G.I.C (Ecole Supérieur de Gestion d'Informatique et de Comptabilité) de Bamako</em></p>
-            <!-- <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p> -->
-          </div>
-
-          <div class="resume-item">
-              <h4>Diplôme Universitaire de Technologie (D.U.T) de l’ESGIC(BAMAKO) en Réseau et Télécom.</h4>
-              <h5><i class="uil uil-calendar-alt"></i>2020</h5>
-              <p><em> E.S.G.I.C  (Ecole Supérieur de Gestion d'Informatique et de Comptabilité) de Bamako </em></p>
-              <!-- <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p> -->
-          </div>
-
-          <div class="resume-item">
-            <h4>Baccaleréat Malien en TSE (Terminale Science Exact)</h4>
-            <h5><i class="uil uil-calendar-alt"></i>2017</h5>
-            <p><em>LEKT (Lycée El Hadj Karim Traoré)</em></p>
-            <!-- <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p> -->
-          </div>
-
-          
+      <div class="row align-items-center gy-5 gx-lg-5">
+        <div class="col-lg-7">
+          <p class="hello" data-i18n="hero.hello">Hello, I&#x27;m</p>
+          <h1 data-i18n="hero.name">Youssouf Djire</h1>
+          <p class="role" aria-live="off"><span id="typed">Data Engineer</span><span class="caret" aria-hidden="true"></span></p>
+          <p class="lead" data-i18n="hero.lead">I build data pipelines and ETL with Python, Apache Kafka and Spark Structured Streaming. I graduated in 2026 with a master&#x27;s degree with honours from Tomsk Polytechnic University, and I am looking for a Junior Data Engineer position.</p>
+          <div class="cta"><div class="dropdown cv-dd">
+  <button class="btn btn-cv dropdown-toggle" type="button" id="cvHero" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download" aria-hidden="true"></i> <span data-i18n="cv.download">Download CV</span></button>
+  <ul class="dropdown-menu" aria-labelledby="cvHero">
+    <li><h6 class="dropdown-header" data-i18n="cv.choose">Choose the language of the PDF</h6></li>
+    <li><a class="dropdown-item" href="assets/pdf/CV_Youssouf_Djire_EN.pdf" download data-i18n="cv.en">English (PDF)</a></li>
+    <li><a class="dropdown-item" href="assets/pdf/CV_Youssouf_Djire_FR.pdf" download data-i18n="cv.fr">French (PDF)</a></li>
+    <li><a class="dropdown-item" href="assets/pdf/CV_Youssouf_Djire_RU.pdf" download data-i18n="cv.ru">Russian (PDF)</a></li>
+  </ul>
+</div><a class="btn btn-ghost" href="#contact" data-i18n="hero.contact">Contact me</a></div>
+          <p class="place"><i class="bi bi-geo-alt" aria-hidden="true"></i> <span data-i18n="hero.place">Tomsk, Russia. Open to relocation and remote work.</span></p>
         </div>
-        <div class="col-lg-6">
-          <h3 class="resume-title">Expérience professionnelle</h3>
-          
-          <div class="resume-item">
-            <h4>Stagiaire à Moov Africa Malitel</h4>
-            <h5><i class="uil uil-calendar-alt"></i>02/29/2023-02/29/2023</h5>
-            <p><em> Moov Africa Malitel </em></p>
-            <p>
-            <ul>
-              <li> Gestion du réseau et des clients CDMA, comprenant la liste, l'activation, la suppression, le bouchage, le débouchage, la modification et le changement des lignes d'abonnés.</li>
-              <!-- <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-              <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-              <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li> -->
-            </ul>
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Développeur web full stack</h4>
-            <h5><i class="uil uil-calendar-alt"></i>01/06/2022-01/03/2023</h5>
-            <p><em>Orange Digital Center - Mali </em></p>
-            <p>
-            <ul>
-              <li>Création d'applications web fonctionnelles et de site web à partir de la conception initiale à la mise en œuvre finale, y compris les aspects front-end et back-end. Orange Digital Center (Mali).</li>
-              <!-- <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-              <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-              <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li> -->
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>AGENT MARKETTING</h4>
-            <h5>2022</h5>
-            <p><em>ZABBAN HOLDDING - Mali</em></p>
-            <p>
-            <ul>
-              <li>Vente et présentation des produits de Zaban holdding aux différentes boutiques dans tout Bamako.</li>
-              <!-- <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-              <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-              <li>Created 4+ design presentations and proposals a month for clients and account managers</li> -->
-            </ul>
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>AGENT DE SANTÉ</h4>
-            <h5>2022</h5>
-            <p><em>T.S.WORLD INT - Mali</em></p>
-            <p>
-            <ul>
-              <li>Soigner les différents patients en fonction de leur maladie avec la thérapie Magnétique.</li>
-              <!-- <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-              <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-              <li>Created 4+ design presentations and proposals a month for clients and account managers</li> -->
-            </ul>
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Stagiaire à la Sotelma-Malitel</h4>
-            <h5>2020</h5>
-            <p><em>SOTELMA-MALITAL</em></p>
-            <p>
-            <ul>
-              <li>Installation de la connection ADSL dans les domiciles.</li>
-              <!-- <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-              <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-              <li>Created 4+ design presentations and proposals a month for clients and account managers</li> -->
-            </ul>
-            </p>
-          </div>
+        <div class="col-lg-5">
+          <div class="portrait"><img src="assets/img/youssouf-djire.jpg" width="640" height="720" data-i18n-attr="alt:hero.photoalt" alt="Portrait of Youssouf Djire"></div>
         </div>
       </div>
-
     </div>
-  </section><!-- End Resume Section -->
-
-  <!-- ======= Services Section ======= -->
-  <section id="services" class="services">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Services</h2>
-        <p>Ce que j'offre</p>
+    <div class="pipe" aria-labelledby="pipeTitle">
+      <div class="container">
+        <p id="pipeTitle" class="pipe-title" data-i18n="pipe.title">My master&#x27;s project, stage by stage: emotions analysed from a live video stream</p>
+        <ol class="pipe-flow"><li class="pipe-node"><span class="pipe-dot" aria-hidden="true"></span><strong data-i18n="pipe.1">Webcam</strong><span data-i18n="pipe.1d">video capture</span></li><li class="pipe-node"><span class="pipe-dot" aria-hidden="true"></span><strong data-i18n="pipe.2">OpenCV, MediaPipe</strong><span data-i18n="pipe.2d">face detection</span></li><li class="pipe-node"><span class="pipe-dot" aria-hidden="true"></span><strong data-i18n="pipe.3">ONNX Runtime</strong><span data-i18n="pipe.3d">8 emotion classes</span></li><li class="pipe-node"><span class="pipe-dot" aria-hidden="true"></span><strong data-i18n="pipe.4">Apache Kafka</strong><span data-i18n="pipe.4d">event stream</span></li><li class="pipe-node"><span class="pipe-dot" aria-hidden="true"></span><strong data-i18n="pipe.5">Spark Structured Streaming</strong><span data-i18n="pipe.5d">stream processing</span></li><li class="pipe-node"><span class="pipe-dot" aria-hidden="true"></span><strong data-i18n="pipe.6">Parquet</strong><span data-i18n="pipe.6d">17 fields per event</span></li><li class="pipe-node"><span class="pipe-dot" aria-hidden="true"></span><strong data-i18n="pipe.7">Streamlit</strong><span data-i18n="pipe.7d">live dashboard</span></li></ol>
       </div>
-
-      <div class="row services__content">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch services__icon">
-          <div class="icon-box">
-            <div class="icon"><i class="uil uil-web-grid services__icon"></i></div>
-            <h4><a href="">UI/UX <br> Designer</a></h4>
-            <!-- <button type="button" class="btn btn-primary services__button">Voir plus<i class="uil uil-arrow-right button__icon"></i></button>
-             -->
-          
-
-          <div class="services__modal">
-            <div class="services__modal-content">
-                <!-- <h4 class="services__modal-title">UI/UX <br> Designer</h4> -->
-                <i class="uil uil-times services__modal-close"></i>
-
-                <ul class="services__modal-services grid">
-                    <li class="services__modal-service">
-                        <i class="uil uil-check-circle services__modal-icon"></i>
-                        <p>Je développe l'interface utilisateur.</p>
-                    </li>
-
-                    <li class="services__modal-service">
-                        <i class="uil uil-check-circle services__modal-icon"></i>
-                        <p>Développement de Maquettes</p>
-                    </li>
-
-                    <li class="services__modal-service">
-                        <i class="uil uil-check-circle services__modal-icon"></i>
-                        <p>Je crée des interactions d'éléments Ux.</p>
-                    </li>
-
-                    <li class="services__modal-service">
-                        <i class="uil uil-check-circle services__modal-icon"></i>
-                        <p>Je positionne la marque de votre entreprise.</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        </div>
-      </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><i class="uil uil-arrow services__icon"></i></div>
-            <h4><a href="">Frontend <br> Developer</a></h4>
-            <!-- <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> -->
-          
-
-          <div class="services__modal">
-            <div class="services__modal-content">
-                <h4 class="services__modal-title">Frontend <br> Developer</h4> 
-                <i class="uil uil-times services__modal-close"></i>
-
-                <ul class="services__modal-services grid">
-                    <li class="services__modal-service">
-                        <i class="uil uil-check-circle services__modal-icon"></i>
-                        <p>Je développe l'interface utilisateur.</p>
-                    </li>
-
-                    <li class="services__modal-service">
-                        <i class="uil uil-check-circle services__modal-icon"></i>
-                        <p>Développement de pages Web.</p>
-                    </li>
-
-                    <li class="services__modal-service">
-                        <i class="uil uil-check-circle services__modal-icon"></i>
-                        <p>Je crée des interactions d'éléments des pages autre...</p>
-                    </li>
-
-                    <li class="services__modal-service">
-                        <i class="uil uil-check-circle services__modal-icon"></i>
-                        <p>Je fais des animations et donnes une bonne apparence à l'interface du site ou de l'application</p>
-                    </li>
-                </ul>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="uil uil-pen services__icon"></i></div>
-            <h4><a href="">Backend <br> developer</a></h4>
-            <!-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> -->
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                  <h4 class="services__modal-title">Backend <br> developer</h4>
-                  <i class="uil uil-times services__modal-close"></i>
-
-                  <ul class="services__modal-services grid">
-                      <li class="services__modal-service">
-                          <i class="uil uil-check-circle services__modal-icon"></i>
-                          <p>Analyse UML</p>
-                      </li>
-
-                      <li class="services__modal-service">
-                          <i class="uil uil-check-circle services__modal-icon"></i>
-                          <p>Codage (avec les fonctionnalités désirés et language)</p>
-                      </li>
-
-                      <li class="services__modal-service">
-                          <i class="uil uil-check-circle services__modal-icon"></i>
-                          <p>Securité et Base de Donnée</p>
-                      </li>
-
-                      <li class="services__modal-service">
-                          <i class="uil uil-check-circle services__modal-icon"></i>
-                          <p>Teste des fonctionnalités.</p>
-                      </li>
-                      <li class="services__modal-service">
-                          <i class="uil uil-check-circle services__modal-icon"></i>
-                          <p>Je positionne la marque de votre entreprise.</p>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-
-          </div>
-        </div>
-
-        <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4><a href="">Nemo Enim</a></h4>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-slideshow"></i></div>
-            <h4><a href="">Dele cardo</a></h4>
-            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-arch"></i></div>
-            <h4><a href="">Divera don</a></h4>
-            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-          </div>
-        </div> -->
-
-      </div>
-
     </div>
-  </section><!-- End Services Section -->
+  </section>
 
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
+  <section class="figures" data-i18n-attr="aria-label:aria.figures" aria-label="Key figures"><div class="container"><div class="row g-4"><div class="col-6 col-lg-3"><div class="fig"><strong data-i18n="fig.1">2 yrs 2 mo</strong><span data-i18n="fig.1d">of experience across data, web development and telecom</span></div></div><div class="col-6 col-lg-3"><div class="fig"><strong data-i18n="fig.2">Master&#x27;s, 2026</strong><span data-i18n="fig.2d">with honours, Big Data Technologies and Analytics</span></div></div><div class="col-6 col-lg-3"><div class="fig"><strong data-i18n="fig.3">3 languages</strong><span data-i18n="fig.3d">French C2, English C1, Russian B2</span></div></div><div class="col-6 col-lg-3"><div class="fig"><strong data-i18n="fig.4">840 hours</strong><span data-i18n="fig.4d">of intensive full-stack training at Orange Digital Center</span></div></div></div></div></section>
+
+  <section id="about" class="sec">
     <div class="container">
-
-      <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>Travaux les plus récents</p>
+      <h2 data-i18n="about.h">About me</h2>
+      <div class="row gy-5 gx-lg-5">
+        <div class="col-lg-7"><p class="big" data-i18n="about.p1">Data Engineer (Big Data), 2026 TPU master&#x27;s graduate with honours (Big Data Technologies and Analytics). I build Data Pipelines and ETL in Python, Apache Kafka and Spark Structured Streaming; I work with SQL, PostgreSQL, ClickHouse and Docker; I have experience in Machine Learning and Computer Vision. I am looking for a Junior Data Engineer position. Residence permit in Russia, ready for business trips and relocation within Russia, open to remote work.</p><p data-i18n="about.p2">Before moving to data engineering, I studied networks and telecommunications at ESGIC in Bamako (DUT in 2020, professional bachelor&#x27;s degree in 2021), then trained as a full-stack developer at Orange Digital Center.</p></div>
+        <div class="col-lg-5"><h3 class="h-sub" data-i18n="about.facts">At a glance</h3><dl class="facts"><div class="fact"><dt data-i18n="info.0k">Location</dt><dd data-i18n="info.0v">Tomsk</dd></div><div class="fact"><dt data-i18n="info.1k">Citizenship</dt><dd data-i18n="info.1v">Mali</dd></div><div class="fact"><dt data-i18n="info.2k">Work permit</dt><dd data-i18n="info.2v">Mali, Russia</dd></div><div class="fact"><dt data-i18n="info.4k">Business trips</dt><dd data-i18n="info.4v">Ready for business trips</dd></div><div class="fact"><dt data-i18n="goal.0k">Employment type</dt><dd data-i18n="goal.0v">Full-time, internship</dd></div><div class="fact"><dt data-i18n="goal.1k">Work format</dt><dd data-i18n="goal.1v">Remote, hybrid, on-site</dd></div></dl></div>
       </div>
+      <h3 class="h-sub mt-5" data-i18n="do.h">What I do</h3>
+      <div class="row g-4"><div class="col-md-6"><div class="do lift"><i class="bi bi-diagram-2" aria-hidden="true"></i><div><h3 data-i18n="do.1">Data engineering</h3><p data-i18n="do.1d">Data pipelines and ETL in Python with Apache Kafka, Spark Structured Streaming and Airflow. Storage in Parquet, PostgreSQL and ClickHouse.</p></div></div></div><div class="col-md-6"><div class="do lift"><i class="bi bi-bar-chart-line" aria-hidden="true"></i><div><h3 data-i18n="do.2">Data analysis and BI</h3><p data-i18n="do.2d">Data cleaning, exploratory analysis and dashboards with pandas, Power BI, Plotly and Streamlit.</p></div></div></div><div class="col-md-6"><div class="do lift"><i class="bi bi-cpu" aria-hidden="true"></i><div><h3 data-i18n="do.3">Machine learning and computer vision</h3><p data-i18n="do.3d">Model training and evaluation with scikit-learn. Real-time inference with ONNX Runtime, OpenCV and MediaPipe.</p></div></div></div><div class="col-md-6"><div class="do lift"><i class="bi bi-code-slash" aria-hidden="true"></i><div><h3 data-i18n="do.4">Full-stack web development</h3><p data-i18n="do.4d">Web and mobile applications from frontend to backend and database: HTML, CSS, JavaScript, Node.js and PHP.</p></div></div></div></div>
+    </div>
+  </section>
 
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <!-- <li data-filter=".filter-card">Card</li> -->
-            <li data-filter=".filter-web">Web</li>
+  <section id="skills" class="sec sec-alt">
+    <div class="container">
+      <h2 data-i18n="skills.h">Skills</h2>
+      <div class="row gy-5 gx-lg-5">
+        <div class="col-lg-7"><div class="skill-groups"><div class="skill-group"><h3 data-i18n="sk.0">Languages and data</h3><ul class="chips"><li>Python</li><li>SQL</li><li>pandas</li><li>PySpark</li><li>Bash</li></ul></div><div class="skill-group"><h3 data-i18n="sk.1">Big Data and streaming</h3><ul class="chips"><li>Apache Spark</li><li>Spark Structured Streaming</li><li>Apache Kafka</li><li>Apache Airflow</li><li>ETL</li><li>Data Pipeline</li><li>Parquet</li><li>Big Data</li></ul></div><div class="skill-group"><h3 data-i18n="sk.2">Databases</h3><ul class="chips"><li>PostgreSQL</li><li>ClickHouse</li><li>MongoDB</li><li>NoSQL</li></ul></div><div class="skill-group"><h3 data-i18n="sk.3">Analytics, BI and ML</h3><ul class="chips"><li>Power BI</li><li data-i18n="skill.viz">Data Visualization</li><li>Plotly</li><li>Matplotlib</li><li>Machine Learning</li><li>Computer Vision</li></ul></div><div class="skill-group"><h3 data-i18n="sk.4">Tools and cloud</h3><ul class="chips"><li>Docker Compose</li><li>GitHub</li><li>Yandex Cloud</li></ul></div><div class="skill-group"><h3 data-i18n="skills.web">Web and mobile</h3><ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>Node.js</li><li>Angular</li><li>Flutter</li><li>Ionic</li><li>Bootstrap</li><li>Java</li><li>Spring Boot</li><li>Firebase</li><li>MySQL</li><li>WordPress</li><li>Figma</li><li>Photoshop</li></ul></div></div></div>
+        <div class="col-lg-5">
+          <figure class="chart"><figcaption data-i18n="skills.chart">Data tools I work with, by domain</figcaption><div id="chartSkills" class="bars"></div></figure>
+          <figure class="chart"><figcaption data-i18n="skills.langs">Languages, on the CEFR scale</figcaption><div id="chartLangs" class="cefr"></div></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="sec">
+    <div class="container">
+      <h2><span data-i18n="exp.h">Experience</span> <small data-i18n="exp.total">2 years 2 months</small></h2>
+      <figure class="chart chart-wide"><figcaption data-i18n="exp.chart">Timeline of my roles, 2022 to 2026</figcaption>
+        <div id="chartTimeline" class="gantt"></div>
+        <ul class="legend"><li><i class="sw sw-a"></i><span data-i18n="exp.leg1">Data and machine learning</span></li><li><i class="sw sw-b"></i><span data-i18n="exp.leg2">Web development, IT and telecom</span></li></ul>
+      </figure>
+      <ol class="xps"><li class="xp"><div class="xp-when"><span data-i18n="exp.0.date">January 2026 — June 2026</span><em data-i18n="exp.0.dur">6 months</em></div>
+<div class="xp-what"><h3 data-i18n="exp.0.role">Student researcher (master&#x27;s project)</h3><p class="xp-org" data-i18n="exp.0.org">National Research Tomsk Polytechnic University</p><ul><li data-i18n="exp.0.b0">Designed and developed a distributed architecture for real-time emotion analysis (master&#x27;s thesis).</li><li data-i18n="exp.0.b1">Implemented the complete pipeline: webcam video capture, face detection (OpenCV, MediaPipe), classification into 8 emotion classes (ONNX model), event publishing to Apache Kafka, stream processing with Spark Structured Streaming, storage in Parquet (17 fields per event), Streamlit dashboard.</li><li data-i18n="exp.0.b2">Set up monitoring of system metrics (median and p95 end-to-end latency, throughput, emotion distribution, pipeline status) to ensure stable operation and identify bottlenecks.</li><li data-i18n="exp.0.b3">Validated the full cycle experimentally (43 unique face IDs in one session, median model confidence of 0.79); project carried out under the guidance of a scientific supervisor and defended with the grade “excellent”.</li><li data-i18n="exp.0.b4">Stack: Python, OpenCV, MediaPipe, ONNX Runtime, Kafka, Spark, Docker Compose, Plotly.</li></ul></div></li><li class="xp"><div class="xp-when"><span data-i18n="exp.1.date">July 2025</span><em data-i18n="exp.1.dur">1 month</em></div>
+<div class="xp-what"><h3 data-i18n="exp.1.role">Summer academic internship — customer behaviour analysis and credit scoring</h3><p class="xp-org" data-i18n="exp.1.org">National Research Tomsk Polytechnic University</p><ul><li data-i18n="exp.1.b0">Developed and evaluated a logistic regression model classifying reliable/unreliable customers on a real credit scoring dataset.</li><li data-i18n="exp.1.b1">Performed full data preprocessing (cleaning, missing values, duplicates, encoding of categorical variables, standardization), plus exploratory and correlation analysis.</li><li data-i18n="exp.1.b2">Assessed model quality with accuracy, the confusion matrix and the ROC curve (Python, scikit-learn, pandas, matplotlib/seaborn).</li></ul></div></li><li class="xp"><div class="xp-when"><span data-i18n="exp.2.date">May 2023 — December 2023</span><em data-i18n="exp.2.dur">8 months</em></div>
+<div class="xp-what"><h3 data-i18n="exp.2.role">IT specialist</h3><p class="xp-org" data-i18n="exp.2.org">Diakite Consulting</p><ul><li data-i18n="exp.2.b0">Prepared administrative documents and maintained databases/forms in Word, Excel and Access for the company&#x27;s internal needs.</li><li data-i18n="exp.2.b1">Installed and configured operating systems, application software and Wi-Fi networks on several user workstations.</li><li data-i18n="exp.2.b2">Diagnosed and resolved technical faults, ensuring uninterrupted work for users.</li></ul></div></li><li class="xp"><div class="xp-when"><span data-i18n="exp.3.date">February 2023 — April 2023</span><em data-i18n="exp.3.dur">3 months</em></div>
+<div class="xp-what"><h3 data-i18n="exp.3.role">Networks and telecommunications intern</h3><p class="xp-org" data-i18n="exp.3.org">SOTELMA-SA</p><ul><li data-i18n="exp.3.b0">Handled the allocation, activation, suspension and record-keeping of fixed telephone lines in the operations and maintenance department.</li><li data-i18n="exp.3.b1">Performed data backup and recovery during technical incidents.</li><li data-i18n="exp.3.b2">Advised users on telecom services.</li></ul></div></li><li class="xp"><div class="xp-when"><span data-i18n="exp.4.date">June 2022 — January 2023</span><em data-i18n="exp.4.dur">8 months</em></div>
+<div class="xp-what"><h3 data-i18n="exp.4.role">Full-Stack web/mobile developer</h3><p class="xp-org" data-i18n="exp.4.org">Orange Digital Kalanso / Orange Digital Center</p><ul><li data-i18n="exp.4.b0">Designed and developed complete web and mobile applications (frontend, backend, database) as part of an intensive 840-hour course.</li><li data-i18n="exp.4.b1">Built responsive and accessible web interfaces with modern technologies (HTML/CSS/JS, front-end frameworks, Node.js, PHP).</li></ul></div></li></ol>
+    </div>
+  </section>
+
+  <section id="projects" class="sec sec-alt">
+    <div class="container">
+      <h2 data-i18n="proj.h">Projects</h2>
+      <h3 class="h-sub" data-i18n="proj.featured">Data projects</h3>
+      
+<article class="proj proj-lead lift">
+  <h4 data-i18n="proj.1">Real-time emotion analysis on a distributed Big Data architecture</h4><p data-i18n="proj.1d">My master&#x27;s thesis. A complete pipeline that captures video from a webcam, detects faces, classifies emotions with an ONNX model, publishes events to Apache Kafka, processes them with Spark Structured Streaming, stores them in Parquet and shows them on a Streamlit dashboard. Defended with the grade “excellent”.</p>
+  <div class="stats"><div class="stat"><strong><span data-num="8">8</span></strong><span data-i18n="proj.1s1">emotion classes</span></div><div class="stat"><strong><span data-num="17">17</span></strong><span data-i18n="proj.1s2">fields stored per event</span></div><div class="stat"><strong><span data-num="43">43</span></strong><span data-i18n="proj.1s3">unique face IDs in one session</span></div><div class="stat"><strong><span data-num="0.79">0.79</span></strong><span data-i18n="proj.1s4">median model confidence</span></div></div>
+  <ul class="chips chips-sm"><li>Python</li><li>OpenCV</li><li>MediaPipe</li><li>ONNX Runtime</li><li>Apache Kafka</li><li>Spark Structured Streaming</li><li>Parquet</li><li>Streamlit</li><li>Docker Compose</li></ul>
+  <a class="link" href="https://github.com/Yousking01/vkr-final-projet-real-time-emotion-video-streaming" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> <span data-i18n="proj.code">View the code on GitHub</span></a>
+</article>
+<div class="row g-4">
+<div class="col-lg-6"><article class="proj h-100 lift">
+  <h4 data-i18n="proj.2">Data Miners PII Guardian</h4><p data-i18n="proj.2d">A tool that detects personal data in unstructured file storage, classifies it by protection level and produces CSV, JSON and Markdown reports.</p>
+  <div class="stats"><div class="stat"><strong><span data-num="3311">3,311</span></strong><span data-i18n="proj.2s1">files processed on a real dataset</span></div><div class="stat"><strong><span data-num="1961">1,961</span></strong><span data-i18n="proj.2s2">files with personal data detected</span></div></div>
+  <a class="link" href="https://github.com/Yousking01/data_miners" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> <span data-i18n="proj.code">View the code on GitHub</span></a>
+</article></div>
+<div class="col-lg-6"><article class="proj h-100 lift">
+  <h4 data-i18n="proj.3">Customer behaviour analysis and credit scoring</h4><p data-i18n="proj.3d">A logistic regression model that classifies reliable and unreliable customers on a real credit scoring dataset, with full data preprocessing and evaluation by accuracy, confusion matrix and ROC curve.</p>
+  <ul class="chips chips-sm"><li>Python</li><li>scikit-learn</li><li>pandas</li><li>matplotlib</li><li>seaborn</li></ul>
+</article></div>
+</div>
+      <div class="web-head"><h3 class="h-sub" data-i18n="proj.web">Earlier web and mobile work</h3>
+        <div class="filters" role="group" data-i18n-attr="aria-label:aria.filter" aria-label="Filter projects">
+          <button type="button" data-filter="all" aria-pressed="true" data-i18n="proj.all">All</button>
+          <button type="button" data-filter="app" aria-pressed="false" data-i18n="proj.app">Applications</button>
+          <button type="button" data-filter="web" aria-pressed="false" data-i18n="proj.site">Websites</button>
+        </div>
+      </div>
+      <ul class="web-list"><li class="web-item lift" data-kind="app"><i class="bi bi-geo-alt" aria-hidden="true"></i><div><strong data-i18n="web.0">Regions API</strong><span data-i18n="web.0k">REST API</span></div></li><li class="web-item lift" data-kind="web"><i class="bi bi-window" aria-hidden="true"></i><div><strong data-i18n="web.1">Orange Digital Center website</strong><span data-i18n="web.1k">Showcase website</span></div></li><li class="web-item lift" data-kind="app"><i class="bi bi-shuffle" aria-hidden="true"></i><div><strong data-i18n="web.2">Draw API</strong><span data-i18n="web.2k">REST API</span></div></li><li class="web-item lift" data-kind="app"><i class="bi bi-person-badge" aria-hidden="true"></i><div><strong data-i18n="web.3">Portfolio</strong><span data-i18n="web.3k">Angular application</span></div></li><li class="web-item lift" data-kind="app"><i class="bi bi-shield-lock" aria-hidden="true"></i><div><strong data-i18n="web.4">Secured application</strong><span data-i18n="web.4k">Spring Boot Security</span></div></li><li class="web-item lift" data-kind="app"><i class="bi bi-diagram-3" aria-hidden="true"></i><div><strong data-i18n="web.5">ERP</strong><span data-i18n="web.5k">Business application</span></div></li><li class="web-item lift" data-kind="app"><i class="bi bi-phone" aria-hidden="true"></i><div><strong data-i18n="web.6">TikTok clone</strong><span data-i18n="web.6k">Flutter mobile application</span></div></li><li class="web-item lift" data-kind="web"><i class="bi bi-bag" aria-hidden="true"></i><div><strong data-i18n="web.7">Art shop</strong><span data-i18n="web.7k">E-commerce website</span></div></li><li class="web-item lift" data-kind="web"><i class="bi bi-tree" aria-hidden="true"></i><div><strong data-i18n="web.8">Environment website</strong><span data-i18n="web.8k">Website</span></div></li></ul>
+    </div>
+  </section>
+
+  <section id="education" class="sec">
+    <div class="container">
+      <h2 data-i18n="edu.h">Education and certificates</h2>
+      <div class="row gy-5 gx-lg-5">
+        <div class="col-lg-6"><h3 class="h-sub" data-i18n="edu.deg">Degrees</h3><ul class="rows rows-strong"><li><span class="yr">2026</span><div><strong data-i18n="edu.0.t">Software Engineering — Big Data Technologies and Analytics</strong><span data-i18n="edu.0.o">Tomsk Polytechnic University (TPU)</span><em data-i18n="edu.0.l">Master&#x27;s degree</em></div></li><li><span class="yr">2021</span><div><strong data-i18n="edu.1.t">Computer Networks and Telecommunications</strong><span data-i18n="edu.1.o">ESGIC (Bamako)</span><em data-i18n="edu.1.l">Professional bachelor&#x27;s degree (Licence professionnelle)</em></div></li><li><span class="yr">2020</span><div><strong data-i18n="edu.2.t">Networks and Telecommunications</strong><span data-i18n="edu.2.o">ESGIC (Bamako)</span><em data-i18n="edu.2.l">University Diploma of Technology (DUT)</em></div></li><li><span class="yr">2017</span><div><strong data-i18n="edu.3.t">Baccalaureate in exact sciences</strong><span data-i18n="edu.3.o">L.E.K.T</span></div></li></ul>
+          <h3 class="h-sub mt-5" data-i18n="edu.awards">Conference awards</h3><ul class="rows"><li><span class="yr">2026</span><div><span data-i18n="cert.0">Diploma in the category “For originality of the idea, the topic and their implementation” (6th International Conference “Scientific Initiative”)</span></div></li><li><span class="yr">2025</span><div><span data-i18n="cert.1">Certificate for a presentation at the 22nd conference “Youth and Modern Information Technologies”</span></div></li><li><span class="yr">2024</span><div><span data-i18n="cert.2">Diploma in the category “For the relevance of the stated problem” (4th International Conference “Scientific Initiative”)</span></div></li></ul></div>
+        <div class="col-lg-6"><h3 class="h-sub" data-i18n="edu.courses">Courses</h3><ul class="rows"><li><span class="yr">2026</span><div><strong data-i18n="crs.0.t">Introduction to SQL</strong><span data-i18n="crs.0.o">Sololearn · Databases, SQL</span></div></li><li><span class="yr">2026</span><div><strong data-i18n="crs.1.t">All-Russian IT Academy Hackathon 2026 (participant)</strong><span data-i18n="crs.1.o">Samsung Electronics · Data Science, Computer Vision, software development</span></div></li><li><span class="yr">2026</span><div><strong data-i18n="crs.2.t">Intro to Programming</strong><span data-i18n="crs.2.o">Kaggle · Python, programming</span></div></li><li><span class="yr">2025</span><div><strong data-i18n="crs.3.t">DataLens: data analysis and visualization</strong><span data-i18n="crs.3.o">Yandex Cloud Training &amp; Certification · Data analysis, data visualization, BI</span></div></li><li><span class="yr">2023</span><div><strong data-i18n="crs.4.t">Web and mobile development</strong><span data-i18n="crs.4.o">Orange Digital Center · Full-stack developer</span></div></li><li><span class="yr">2023</span><div><strong data-i18n="crs.5.t">Computer graphics and video editing techniques</strong><span data-i18n="crs.5.o">Training For All (TFA) · Computer graphics, video editing</span></div></li><li><span class="yr">2022</span><div><strong data-i18n="crs.6.t">Web development basics: HTML, CSS, JavaScript, C++</strong><span data-i18n="crs.6.o">Sololearn · Web development</span></div></li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt" aria-labelledby="tstH">
+    <div class="container"><h2 id="tstH" data-i18n="tst.h">What people say</h2><div class="row g-4"><div class="col-lg-4"><figure class="quote lift"><blockquote data-i18n="tst.0q">A serious, rigorous student who is passionate about development. He really impressed me with what he achieved in the projects he carried out for me. I recommend him.</blockquote>
+<figcaption><img src="assets/img/testimonials/kalouga.jpg" alt="" width="48" height="48" loading="lazy"><div><strong data-i18n="tst.0n">Fatoumata Kalouga</strong><span data-i18n="tst.0r">Developer</span></div></figcaption></figure></div><div class="col-lg-4"><figure class="quote lift"><blockquote data-i18n="tst.1q">A serious, determined student who is passionate about development. He delivered my project with great quality and attention, and with support around the clock. He is a model for everyone.</blockquote>
+<figcaption><img src="assets/img/testimonials/nene.jpg" alt="" width="48" height="48" loading="lazy"><div><strong data-i18n="tst.1n">Nene Sylla</strong><span data-i18n="tst.1r">Developer</span></div></figcaption></figure></div><div class="col-lg-4"><figure class="quote lift"><blockquote data-i18n="tst.2q">As manager of the Orange Digital Center Mali digital training centre, I was really impressed by this courageous, serious student with a single objective: reaching his goal. The projects he presented to us stood out. I truly recommend him.</blockquote>
+<figcaption><img src="assets/img/testimonials/kaou.jpg" alt="" width="48" height="48" loading="lazy"><div><strong data-i18n="tst.2n">Kaou Diallo</strong><span data-i18n="tst.2r">Manager, Orange Digital Center Mali</span></div></figcaption></figure></div></div></div>
+  </section>
+
+  <section id="contact" class="sec sec-dark">
+    <div class="container">
+      <h2 data-i18n="contact.h">Contact</h2>
+      <p class="big" data-i18n="contact.lead">Have a position, an internship or a project in mind? Write to me, I reply quickly.</p>
+      <div class="row gy-5 gx-lg-5">
+        <div class="col-lg-5">
+          <ul class="contacts">
+            <li><i class="bi bi-envelope" aria-hidden="true"></i><div><span data-i18n="contact.email">Email</span><a href="mailto:djireyoussouf1999@gmail.com">djireyoussouf1999@gmail.com</a></div></li>
+            <li><i class="bi bi-mortarboard" aria-hidden="true"></i><div><span data-i18n="contact.uni">University email</span><a href="mailto:djire01@tpu.ru">djire01@tpu.ru</a></div></li>
+            <li><i class="bi bi-telephone" aria-hidden="true"></i><div><span data-i18n="contact.phone">Phone</span><a href="tel:+79994999686">+7 (999) 499-96-86</a></div></li>
+            <li><i class="bi bi-telegram" aria-hidden="true"></i><div><span>Telegram</span><a href="https://t.me/YouskingDjire" target="_blank" rel="noopener">@YouskingDjire</a></div></li>
+            <li><i class="bi bi-linkedin" aria-hidden="true"></i><div><span>LinkedIn</span><a href="https://www.linkedin.com/in/youssouf-djir%C3%A9-544302247" target="_blank" rel="noopener">youssouf-djiré</a></div></li>
+            <li><i class="bi bi-github" aria-hidden="true"></i><div><span>GitHub</span><a href="https://github.com/Yousking01" target="_blank" rel="noopener">Yousking01</a></div></li>
+            <li><i class="bi bi-geo-alt" aria-hidden="true"></i><div><span data-i18n="contact.loc">Location</span><b data-i18n="contact.locv">Tomsk, Russia</b></div></li>
           </ul>
         </div>
+        <div class="col-lg-7">
+          <form id="contactForm" class="form" novalidate>
+            <h3 data-i18n="form.h">Send me a message</h3>
+            <div class="row g-3">
+              <div class="col-md-6"><label for="fName" data-i18n="form.name">Your name</label><input id="fName" name="name" type="text" autocomplete="name" required></div>
+              <div class="col-md-6"><label for="fEmail" data-i18n="form.email">Your email</label><input id="fEmail" name="email" type="email" autocomplete="email" required></div>
+              <div class="col-12"><label for="fSubject" data-i18n="form.subject">Subject</label><input id="fSubject" name="subject" type="text"></div>
+              <div class="col-12"><label for="fMessage" data-i18n="form.message">Message</label><textarea id="fMessage" name="message" rows="5" required></textarea></div>
+            </div>
+            <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+            <button class="btn btn-gold" type="submit"><i class="bi bi-send" aria-hidden="true"></i> <span data-i18n="form.send">Send message</span></button>
+            <p class="form-note" data-i18n="form.note">Your message goes straight to my inbox.</p>
+          </form>
+        </div>
       </div>
-
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/apiregion.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Application</h4>
-              <p>API</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/apiregion.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/siteodc.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Site Web</h4>
-              <p>Site Vitrine</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/siteodc.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/apitirage.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Application</h4>
-              <p>API</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/apitirage.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/angular.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Portfolio</h4>
-              <p>Portfolio</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/angular.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/springbootsecurity.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Application</h4>
-              <p>Sécurité</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/springbootsecurity.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/erp.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Application</h4>
-              <p>E.R.P</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/erp.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/flutter.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Application</h4>
-              <p>Tiktok Clone</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/flutter.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/siteart.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Site web</h4>
-              <p>E-commerce</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/siteart.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/siteenviro.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Site Web</h4>
-              <p>Environnement</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/siteenviro.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
     </div>
-  </section><!-- End Portfolio Section -->
+  </section>
+</main>
 
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contacter Moi</p>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>Mon Addresse</h3>
-            <p>Kalabancoro Nérecoro (Koulikoro, kati)- Mali, <br>Rue: 350, Porte: 32.</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Profils sociaux</h3>
-            <div class="social-links">
-              <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
-              <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
-              <a href="https://www.facebook.com/profile.php?id=100006171434956" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="https://github.com/Yousking01" class="instagram"><i class="bi bi-github"></i></a>
-              <a href="https://www.linkedin.com/feed/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Envoyez moi un email</h3>
-            <p>djireyoussouf1999@gmail.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Appelez-moi</h3>
-            <p>+223 72095772</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="votre nom" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Votre e-mail" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Objets" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Chargement</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Votre message a été envoyé. Merci!</div>
-        </div>
-        <div class="text-center"><button type="submit" value="Submit">Envoyer le message</button></div>
-      </form> -->
-
-      
-    </div>
-  </section><!-- End Contact Section -->
-
-  <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-    Mon Porfolio @Youssouf Djire
+<footer class="site-footer">
+  <div class="container">
+    <span data-i18n="footer.rights">© 2026 Youssouf Djire</span>
+    <a href="#top"><i class="bi bi-arrow-up" aria-hidden="true"></i> <span data-i18n="footer.top">Back to top</span></a>
   </div>
+</footer>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+<div id="tip" class="tip" role="tooltip" hidden></div>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/main.js" defer></script>
 </body>
-
 </html>
